@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600&family=Markazi+Text:wght@400;600;700&display=swap');
+
+.active-nav-link .active{
+    @apply underline
+}
+
+@layer base{
+    input, select {
+        @apply rounded-sm w-full bg-white p-2 outline-0 font-body text-black min-h-[36px] leading-none
+    }
+    label span{
+        @apply mb-1 inline-block font-body
+    }
+}

@@ -4,6 +4,7 @@ import img2 from '../assets/bruchetta.svg'
 import img3 from '../assets/lemon dessert.jpg'
 import quote from '../assets/quote.png'
 import about from '../assets/about.png'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     return (
@@ -17,9 +18,9 @@ export default function Home() {
                         <p className="text-white font-body mb-2  text-lg">
                             We are a family owned Moditerranean restaurant, focused on traditional recipes served with a modern twist.
                         </p>
-                        <button className="bg-yellow text-black rounded-xl px-4 py-2 font-body font-bold">
+                        <Link to='/reserve-a-table' className="bg-yellow text-black rounded-xl px-4 py-2 font-body font-bold">
                             Reserve a table
-                        </button>
+                        </Link>
                     </div>
                     <img className='h-96 w-full md:h-[calc(100%+60px)] md:w-1/2 right-0 top-[25px] object-cover rounded-3xl md:absolute' src={banner} />
                 </div>
